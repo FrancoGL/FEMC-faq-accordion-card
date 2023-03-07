@@ -1,0 +1,66 @@
+:root {
+    /* Text */
+    --very-dark-desaturated-blue: hsl(238, 29%, 16%);
+    --soft-red: hsl(14, 88%, 65%);
+    --very-dark-grayish-blue: hsl(237, 12%, 33%);
+    --dark-grayish-blue: hsl(240, 6%, 50%);
+    /* Gradients */
+    --soft-violet: hsl(273, 75%, 66%);
+    --soft-blue: hsl(240, 73%, 65%);
+    /* Dividers */
+    --light-grayish-blue: hsl(240, 5%, 91%);
+}
+
+/* Body */
+body {
+    min-width: 375px;
+    width: 100vw;
+    height: 100vh;
+    font-size: 0.75rem;
+    font-family: 'Kumbh Sans', sans-serif;
+    background: linear-gradient(var(--soft-violet), var(--soft-blue));
+}
+
+/* Card */
+.card {
+    margin: 7rem 2rem 0 2rem;
+    padding: 4rem 2rem 2rem 2rem;
+    background-color: var(--light-grayish-blue);
+    border-radius: 20px;
+}
+
+/* Card Header */
+
+.card__header {
+    width: 14rem;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    bottom: 30.5rem;
+    text-align: center;
+}
+
+/* Card Body */
+
+.body__title {
+    font-size: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.main__text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon-arrow {
+    width: 10px;
+    height: 7px;
+}
+
+.hidden__text {
+    display: none;
+}
