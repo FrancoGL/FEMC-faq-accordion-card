@@ -24,7 +24,7 @@ body {
 /* Card */
 .card {
     margin: 7rem 2rem 0 2rem;
-    padding: 4rem 2rem 2rem 2rem;
+    padding: 5rem 2rem 2rem 2rem;
     background-color: var(--light-grayish-blue);
     border-radius: 20px;
 }
@@ -41,7 +41,15 @@ body {
     bottom: 30.5rem;
     text-align: center;
 }
-
+.shadow {
+    width: 14rem;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    top: 6rem;
+    left: 0;
+    right: 0;
+}
 /* Card Body */
 
 .body__title {
@@ -63,4 +71,11 @@ body {
 
 .hidden__text {
     display: none;
+}
+
+/* Footer */
+
+.attribution {
+    margin-top: 1rem;
+    text-align: center;
 }
