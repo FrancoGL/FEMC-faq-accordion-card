@@ -24,8 +24,8 @@ body {
 /* Card */
 .card {
     margin: 7rem 2rem 0 2rem;
-    padding: 4rem 2rem 2rem 2rem;
-    background-color: var(--light-grayish-blue);
+    padding: 5rem 2rem 2rem 2rem;
+    background-color: #fff;
     border-radius: 20px;
 }
 
@@ -41,7 +41,15 @@ body {
     bottom: 30.5rem;
     text-align: center;
 }
-
+.shadow {
+    width: 14rem;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    top: 6rem;
+    left: 0;
+    right: 0;
+}
 /* Card Body */
 
 .body__title {
@@ -56,11 +64,27 @@ body {
     align-items: center;
 }
 
+.main__text::-webkit-details-marker {
+    display: none;
+}
+
+.row {
+    padding: 0.9rem 0;
+    border-bottom: 1px solid var(--light-grayish-blue);
+}
+
 .icon-arrow {
     width: 10px;
     height: 7px;
 }
 
-.hidden__text {
-    display: none;
+.arrow-rotate {
+    transform: rotate(180deg);
+}
+
+/* Footer */
+
+.attribution {
+    margin-top: 1rem;
+    text-align: center;
 }
