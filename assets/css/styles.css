@@ -73,6 +73,15 @@ body {
     border-bottom: 1px solid var(--light-grayish-blue);
 }
 
+details[open] > summary {
+    color: var(--very-dark-desaturated-blue);
+    font-weight: bold;
+}
+
+.hidden__text {
+    color: var(--dark-grayish-blue);
+}
+
 .icon-arrow {
     width: 10px;
     height: 7px;
