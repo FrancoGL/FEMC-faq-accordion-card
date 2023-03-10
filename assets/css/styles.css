@@ -16,40 +16,42 @@ body {
     min-width: 375px;
     width: 100vw;
     height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
     font-size: 0.75rem;
     font-family: 'Kumbh Sans', sans-serif;
     background: linear-gradient(var(--soft-violet), var(--soft-blue));
 }
 
+main {
+    width: 90%;
+}
+
+.bg__desktop {
+    display: none;
+}
+
+.bg__mobile {
+    display: block;
+    margin: 0 auto;
+    width: 240px;
+    position: relative;
+    top: 4.6rem;
+}
+
+.bg__shadow {
+    display: block;
+    margin: 0 auto;
+}
+
 /* Card */
 .card {
-    margin: 7rem 2rem 0 2rem;
-    padding: 5rem 2rem 2rem 2rem;
+    padding: 0 2rem 2rem 2rem;
     background-color: #fff;
     border-radius: 20px;
 }
 
-/* Card Header */
-
-.card__header {
-    width: 14rem;
-    position: absolute;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-    bottom: 30.5rem;
-    text-align: center;
-}
-.shadow {
-    width: 14rem;
-    position: absolute;
-    margin-left: auto;
-    margin-right: auto;
-    top: 6rem;
-    left: 0;
-    right: 0;
-}
 /* Card Body */
 
 .body__title {
@@ -97,3 +99,4 @@ details[open] > summary {
     margin-top: 1rem;
     text-align: center;
 }
+
