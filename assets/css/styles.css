@@ -13,7 +13,6 @@
 
 /* Body */
 body {
-    min-width: 375px;
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -25,7 +24,7 @@ body {
 }
 
 main {
-    width: 90%;
+    width: 21.094rem;
 }
 
 .bg__desktop {
@@ -99,4 +98,3 @@ details[open] > summary {
     margin-top: 1rem;
     text-align: center;
 }
-
