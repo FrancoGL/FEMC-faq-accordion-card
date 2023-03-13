@@ -23,10 +23,6 @@ body {
     background: linear-gradient(var(--soft-violet), var(--soft-blue));
 }
 
-main {
-    width: 21.094rem;
-}
-
 .bg__desktop {
     display: none;
 }
@@ -39,6 +35,10 @@ main {
     top: 4.6rem;
 }
 
+.box__img {
+    display: none;
+}
+
 .bg__shadow {
     display: block;
     margin: 0 auto;
@@ -46,9 +46,12 @@ main {
 
 /* Card */
 .card {
+    width: calc(21.094rem - 4rem);
     padding: 0 2rem 2rem 2rem;
+    margin-bottom: 1rem;
     background-color: #fff;
     border-radius: 20px;
+    box-shadow: 0px 10px 20px 9px rgba(0,0,0,0.1);
 }
 
 /* Card Body */
@@ -95,6 +98,95 @@ details[open] > summary {
 /* Footer */
 
 .attribution {
-    margin-top: 1rem;
     text-align: center;
+}
+
+@media screen and (min-width: 1024px) {
+
+    body {
+        justify-content: center;
+    }
+
+    main {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+
+    /* Card */
+
+    .card {
+        width: 45rem;
+        height: calc(27.015rem - 8rem);
+        max-height: 100%;
+        max-width: 100%;
+        padding: 4rem;
+        display: flex;
+        overflow: hidden;
+    }
+
+    /* Card Body */
+
+    .card__body {
+        width: 50%;
+    }
+
+    .body__title {
+        text-align: left;
+    }
+
+    .main__text:hover {
+        cursor: pointer;
+        color: var(--soft-red);
+    }
+
+    /* BG img */
+
+    .bg__mobile {
+        display: none;
+    }
+
+    .bg__shadow {
+        display: none;
+    }
+
+    .bg__desktop {
+        display: flex;
+        width: 50%;
+        position: relative;
+    }
+
+    .box__img {
+        display: block;
+        width: 20%;
+        position: absolute;
+        margin-top:  auto;
+        margin-bottom: auto;
+        left: -5.2rem;
+        top: 3.8rem;
+        bottom: 0;
+        z-index: 99;
+    }
+
+    .illustration__desktop {
+        width: 25rem;
+        display: block;
+        position: relative;
+        margin-top: auto;
+        margin-bottom: auto;
+        right: 8.5rem;
+        z-index: 50;
+    }
+
+    .shadow__desktop {
+        width: 40rem;
+        position: absolute;
+        margin-top: auto;
+        margin-bottom: auto;
+        left: -23.5rem;
+        top: -4rem;
+        bottom: 0;
+    }
 }
