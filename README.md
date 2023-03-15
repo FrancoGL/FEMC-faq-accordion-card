@@ -24,7 +24,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Frontend Mentor](#)
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/faq-accordion-card-solution-JOlUzc0zmg)
 - Live Site URL: [Live site with GitHub pages](https://francogl.github.io/FEMC-faq-accordion-card/)
 
 ### Built with
